@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            /*NRO DE COLUMNAS 
+            grid-template-columns: auto auto auto;
+            POR CADA VALOR 1 COLUMNA MAS */
+            grid-template-columns: auto auto auto ;
+
+            /* grid-template-rows - esta propiedad define la altura de cada fila. El valores una lista separada por espacios. 
+                posibles valores none absolute relative
+            */
+            grid-template-rows: 150px 300px;
+            background-color: #2196f3;
+            padding: 10px;
+        }
+        .item{
+            background-color: #eee;
+            border: 1px solid #000;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .container2{
+            grid-template-columns: repeat(4,110px);
+            grid-template-areas: 
+            "header header header header"
+            "main main . sidebar"
+            "footer footer footer footer";
+        }
+        .item-a{grid-area: header;}
+        .item-b{grid-area: main;}
+        .item-c{grid-area: sidebar;}
+        .item-d{grid-area: footer;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+
+    <h1>2da grilla</h1>
+    <div class="container2">
+        <div class="item item-a">Header</div>
+        <div class="item item-b">Main</div>
+        <div class="item item-c">Sidebar</div>
+        <div class="item item-d">Footer</div>
+    </div>
+
+</body>
+</html>

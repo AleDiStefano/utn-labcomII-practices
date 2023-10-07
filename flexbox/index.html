@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flex{
+            display: flex;
+
+            /* HORIZONTAL
+            justify-content: flex-start center flex-end
+            space-between; MANDA A LAS ESQUINAS LAS PUNTAS
+            space-around; DISTRIBUYE PORCENTUALMENTE
+            */
+
+
+            /* VERTICAL
+             align-items: flex-end flex-start center stretch baseline LOS DISTINTOS VALORES QUE PUEDE TOMAR 
+            */
+
+            /* CENTRADO PERFECTO con respecto al elemento padre
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            */
+            
+            /*
+            flex-grow: nos permite definir cuánto crecerá un elemento en basea los elementos hermanos (otros flex-items). 
+            flex-shirnk: nos permite definir cuánto se encogerá un elemento en base a los elementos hermanos (otros flex-items). 
+            flex-basis: nos permite especificar la longitud inicial de un flex-item. Los valores de esta propiedad se especifican en px.
+            */
+
+        }
+        .item{
+            background-color: blue;
+            padding: 20px;
+            color: white;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="flex">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+    </section>
+</body>
+</html>
