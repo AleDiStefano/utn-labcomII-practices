@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREPARCIAL2</title>
+    <script src="index.js" refer></script>
+</head>
+
+<body>
+    <h3>PREPARCIAL2</h3>
+    <div>
+        <label for="pesos">Ingrese la cantidad de pesos</label>
+        <input type="number" name="number" id="pesos">
+        <select id="divisa">
+            <option disabled selected value="0"> -- Seleccione una opción -- </option>
+            <option value="900">Dolares</option>
+            <option value="870">Euros</option>
+        </select>
+        <button type="button" onclick="calcular()">Calcular</button>
+    </div>
+    <p id="result"></p>
+   <br><br><br>
+   <h4>Si quiere agregar una nueva divisa complete los siguientes campos</h4>
+   <label for="divisa_nombre">Nombre de la divisa</label>
+    <input type="text" name="number" id="divisa_nombre">
+    <label for="valor_divisa">Cotización con respecto al peso argentino</label>
+    <input type="number" name="number" id="valor_divisa">
+    <button type="button" onclick="nueva_divisa()">Agregar</button>
+</body>
+
+</html>

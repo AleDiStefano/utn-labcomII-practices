@@ -7,8 +7,7 @@ function calculatePrice() {
         const color = document.getElementById("color");
         const colorSeleccionado = color.value;
         var precio = 0;
-        if (colorSeleccionado === "0")
-        {
+        if (colorSeleccionado === "0") {
             alert("Por favor seleccione un color")
         } else {
             switch (capacidadSeleccionada) {
@@ -29,5 +28,25 @@ function calculatePrice() {
     } else {
         alert("El número está fuera del rango correcto.");
         document.getElementById("numeroInput").textContent = 0
+    }
+}
+
+function changeProductImage() {
+    let color = document.getElementById('color').value;
+    let imagen = document.getElementById('imagen')
+
+    switch (color) {
+        case "grafito":
+            imagen.setAttribute('src','media/grafito.jpg');
+            break;
+        case "sierra":
+            imagen.setAttribute('src','media/sierra.jpg');
+            break;
+        case "silver":
+            imagen.setAttribute('src','media/silver.jpg');
+            break;
+        case "gold":
+            imagen.setAttribute('src','media/gold.jfif');
+            break;
     }
 }
