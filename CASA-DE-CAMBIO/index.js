@@ -22,8 +22,8 @@ function nueva_divisa() {
     } else if (valor_divisa < 1) {
         alert("Por favor, ingrese una cotización de pesos válida para realizar el calculo");
     } else {
-        var select = document.getElementById("divisa");
-        var option = document.createElement("option");
+        let select = document.getElementById("divisa");
+        let option = document.createElement("option");
         option.value = valor_divisa;
         option.text = divisa_nombre;
         select.appendChild(option);
